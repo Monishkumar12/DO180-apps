@@ -15,7 +15,7 @@ spec:
         app: do180
     spec:
       containers:
-        - image: quay.io/openshift-pipeline/demo:latest
+        - image: quay.io/openshift-pipeline/do180:latest
           imagePullPolicy: Always
           name: do180
           ports:
