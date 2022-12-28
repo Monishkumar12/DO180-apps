@@ -5,7 +5,7 @@ metadata:
     app: do180
   name: do180
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: do180
