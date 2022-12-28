@@ -2,22 +2,22 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: demo
-  name: demo
+    app: do180
+  name: do180
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: demo
+      app: do180
   template:
     metadata:
       labels:
-        app: demo
+        app: do180
     spec:
       containers:
         - image: quay.io/openshift-pipeline/demo:latest
           imagePullPolicy: Always
-          name: demo
+          name: do180
           ports:
             - containerPort: 8080
               protocol: TCP
